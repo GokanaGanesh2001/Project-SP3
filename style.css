@@ -1,0 +1,444 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.top_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+
+.search_bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  flex-grow: 1;
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.search_bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.right ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.right ul li {
+  margin-left: 20px;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 300px;
+  height: auto;
+
+
+}
+
+
+.icon {
+  margin-right: 5px;
+}
+
+.bottom_nav {
+  background-color: #00d084;
+  color: #fff;
+}
+
+.bottom_list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.bottom_item {
+  margin-right: 20px;
+}
+
+.bottom_item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 18px;
+}
+
+.bottom_item .links:hover {
+  color: #333;
+  border-radius: 4px;
+
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  top: 100%;
+
+  /* Position the dropdown menu below its parent */
+  left: 50px;
+  z-index: 1;
+
+  height: 450px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  /* Adjust width as needed */
+}
+
+.link1 {
+  position: relative;
+  /* Ensure positioning context for absolute positioning */
+}
+
+.link1:hover .dropdown-menu {
+  display: block;
+  width: 300px;
+}
+
+.subnav_list {
+  margin: 10px;
+}
+
+.subnav_list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.subnav_list img {
+  width: 60px;
+  /* Adjust image width as needed */
+  height: 60px;
+  /* Adjust image height as needed */
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.subnav_list p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subnav_list a:hover {
+  background-color: #f5f5f5;
+  color: #00d084;
+  /* Change background color on hover */
+}
+
+
+
+
+.main-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.categories ul {
+  display: flex;
+  margin-left: 15.5rem;
+  gap: 70px;
+  list-style: none;
+  margin-top: 30px;
+
+}
+
+.subnav_list1 img {
+  width: 125px;
+  /* Adjust image width as needed */
+  height: 120px;
+  /* Adjust image height as needed */
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  background-color: #fff;
+
+
+}
+
+.subnav_list1 img:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in;
+}
+
+.categories ul li a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.categoriesheading {
+  margin-left: 17.5rem;
+  font-size: 18px;
+  color: hwb(0 24% 75%);
+  letter-spacing: 0.5px;
+}
+
+.subnav_list1 img:hover {
+  border: 1px solid #00d084;
+}
+
+
+
+
+
+
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+  .top_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    max-width: 230px;
+    position: relative;
+    left: -6rem;
+    top: -1rem;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search_bar {
+    margin-top: -25px;
+    width: 80%;
+    max-width: none;
+    position: relative;
+    left: -22px;
+  }
+
+  .right ul {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    left: 7rem;
+    top: -7rem;
+  }
+
+  .right ul li {
+    margin: 5px 0;
+    padding: 7px;
+  }
+
+  .bottom_nav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -11px;
+  }
+
+  .bottom_list {
+    width: 100%;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+  .bottom_item {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom_item a {
+    font-size: 13px;
+  }
+
+  .main-section .main-image {
+    position: relative;
+    left: -11px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .subnav_list {
+    width: 100%;
+  }
+
+  .subnav_list img {
+    max-width: 80px;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+    /* Add some margin around the container */
+  }
+
+  .categories h2 {
+    margin: 0;
+    padding: 20px;
+    margin-top: -40px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 900;
+  }
+
+  /* Flex container for the list items */
+  .categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+    justify-content: space-evenly;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+}
+
+
+
+/* Tablet Styles (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .top_nav {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+
+  .left {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .search_bar {
+    margin-left: 10px;
+    max-width: 300px;
+  }
+
+  .bottom_nav {
+    padding: 10px;
+  }
+
+  .bottom_list {
+    justify-content: center;
+  }
+
+  .bottom_item {
+    margin: 0 10px;
+  }
+
+  .dropdown-menu {
+    width: auto;
+  }
+
+  .subnav_list {
+    flex: 1 0 45%;
+    margin: 5px;
+  }
+
+  .subnav_list img {
+    max-width: 100px;
+  }
+}
+
+/* Desktop Styles (992px and above) */
+@media (min-width: 992px) {
+  .top_nav {
+    padding: 0px 40px;
+
+  }
+
+  .logo img {
+    max-width: 250px;
+  }
+
+  .left {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .search_bar {
+    margin-left: 20px;
+    max-width: 500px;
+  }
+
+  .bottom_nav {
+    padding: 10px 40px;
+  }
+
+  .bottom_list {
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    width: 600px;
+    flex-direction: row;
+  }
+
+  .subnav_list {
+    flex: 1 0 45%;
+    margin: 10px;
+  }
+
+  .subnav_list img {
+    max-width: 100px;
+  }
+}
